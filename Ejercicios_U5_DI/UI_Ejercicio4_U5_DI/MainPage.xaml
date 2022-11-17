@@ -9,7 +9,17 @@
             Padding="30,0"
             VerticalOptions="Center">
 
-            <DatePicker x:Name="datePickerEntrada"/>
+            <Label Text="Entrada:"/>
+
+            <DatePicker x:Name="datePickerEntrada"
+                        Format="dd/mm/yyyy"/>
+
+            <Label Text="Salida:"/>
+
+            <DatePicker x:Name="datePickerSalida"
+                        Format="dd/mm/yyyy"
+                        BindingContext="{x:Reference datePickerEntrada}"
+                        MinimumDate="{Binding Date, Mode=OneWay}"/>
 
         </VerticalStackLayout>
     </ScrollView>
