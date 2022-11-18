@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:local="clr-namespace:UI_Ejercicio1_U7_DI.Views"
+            x:Class="UI_Ejercicio1_U7_DI.Views.PaginaTabbed"
+            Title="PaginaTabbed"
+            BarBackgroundColor="AliceBlue"
+            BarTextColor="SandyBrown"
+            SelectedTabColor="CadetBlue"
+            UnselectedTabColor="Azure">
+    <local:Pagina1 IconImageSource="icono_uno.png"/>
+    <local:Pagina2 IconImageSource="icono_dos.png"/>
+    <local:Pagina3 IconImageSource="icono_tres.png"/>
+</TabbedPage>
