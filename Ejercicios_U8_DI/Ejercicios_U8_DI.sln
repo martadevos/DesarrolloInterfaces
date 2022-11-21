@@ -5,11 +5,17 @@ VisualStudioVersion = 17.0.31611.283
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UI_Ejercicio1_U8_DI", "UI_Ejercicio1_U8_DI\UI_Ejercicio1_U8_DI.csproj", "{EDF76EF4-2330-4D62-B1F3-C7AEE2B4123D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UI_Ejercicio2_U8_DI", "UI_Ejercicio2_U8_DI\UI_Ejercicio2_U8_DI.csproj", "{C12FBFB8-30A5-44ED-AC74-F07778D088F0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UI_Ejercicio2_U8_DI", "UI_Ejercicio2_U8_DI\UI_Ejercicio2_U8_DI.csproj", "{C12FBFB8-30A5-44ED-AC74-F07778D088F0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UI_Ejercicio3_U8_DI", "UI_Ejercicio3_U8_DI\UI_Ejercicio3_U8_DI.csproj", "{AB820A21-C6EC-452F-8236-3806154A24E3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UI_Ejercicio3_U8_DI", "UI_Ejercicio3_U8_DI\UI_Ejercicio3_U8_DI.csproj", "{AB820A21-C6EC-452F-8236-3806154A24E3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UI_Ejercicio4_U8_DI", "UI_Ejercicio4_U8_DI\UI_Ejercicio4_U8_DI.csproj", "{91B9CB20-1E3B-4C2E-A30E-405DEDA17947}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UI_Ejercicio4_U8_DI", "UI_Ejercicio4_U8_DI\UI_Ejercicio4_U8_DI.csproj", "{91B9CB20-1E3B-4C2E-A30E-405DEDA17947}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL_Ejercicio5_U8_DI", "DAL_Ejercicio5_U8_DI\DAL_Ejercicio5_U8_DI.csproj", "{722D73CF-19A2-4B42-B06E-CDC3BA3CA101}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entidades_Ejercicio5_U8_DI", "Entidades_Ejercicio5_U8_DI\Entidades_Ejercicio5_U8_DI.csproj", "{944B3857-F50E-4121-BCC8-9BBCEB24E1B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UI_Ejercicio5_U8_DI", "UI_Ejercicio5_U8_DI\UI_Ejercicio5_U8_DI.csproj", "{69006F5B-B467-4C84-A704-51655CC14CA4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +47,20 @@ Global
 		{91B9CB20-1E3B-4C2E-A30E-405DEDA17947}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{91B9CB20-1E3B-4C2E-A30E-405DEDA17947}.Release|Any CPU.Build.0 = Release|Any CPU
 		{91B9CB20-1E3B-4C2E-A30E-405DEDA17947}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{722D73CF-19A2-4B42-B06E-CDC3BA3CA101}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{722D73CF-19A2-4B42-B06E-CDC3BA3CA101}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{722D73CF-19A2-4B42-B06E-CDC3BA3CA101}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{722D73CF-19A2-4B42-B06E-CDC3BA3CA101}.Release|Any CPU.Build.0 = Release|Any CPU
+		{944B3857-F50E-4121-BCC8-9BBCEB24E1B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{944B3857-F50E-4121-BCC8-9BBCEB24E1B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{944B3857-F50E-4121-BCC8-9BBCEB24E1B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{944B3857-F50E-4121-BCC8-9BBCEB24E1B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69006F5B-B467-4C84-A704-51655CC14CA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69006F5B-B467-4C84-A704-51655CC14CA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69006F5B-B467-4C84-A704-51655CC14CA4}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{69006F5B-B467-4C84-A704-51655CC14CA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69006F5B-B467-4C84-A704-51655CC14CA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69006F5B-B467-4C84-A704-51655CC14CA4}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
