@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="UI_Ejercicio4_U8_DI.MainPage">
+    <AbsoluteLayout>
+
+        <Border Stroke="Black"
+                    StrokeThickness="2"
+                    StrokeShape="Rectangle"
+                    AbsoluteLayout.LayoutBounds="0,0,1,0.04"
+                    AbsoluteLayout.LayoutFlags="All">
+            <Label Text="T10MinimalApp2 Project | Main Page"
+                       LineBreakMode="WordWrap"
+                       Padding="10"/>
+        </Border>
+
+        <Border Stroke="Black"
+                    StrokeThickness="2"
+                    StrokeShape="Rectangle"
+                    AbsoluteLayout.LayoutBounds="0,0.11,1,0.1"
+                    AbsoluteLayout.LayoutFlags="All">
+            <Label Text="Building a responsive UI is actually not that hard when you use XAML in Visual Studio. Using Static content can help to ensure that the UI responds apropiately to changing window sizes"
+                       LineBreakMode="WordWrap"
+                       Padding="10"/>
+        </Border>
+
+        <Border Stroke="Black"
+                    StrokeThickness="2"
+                    StrokeShape="Rectangle"
+                    AbsoluteLayout.LayoutBounds="0,0.56,1,0.76"
+                    AbsoluteLayout.LayoutFlags="All">
+            <FlexLayout Direction="Row">
+
+                <FlexLayout Direction="Row"
+                                FlexLayout.Basis="50%"
+                                Padding="10">
+                    <Border Stroke="Black"
+                                StrokeThickness="2"
+                                StrokeShape="Rectangle">
+                        <Label Text="Image1"
+                                   BackgroundColor="Orange"
+                                   WidthRequest="50"
+                                   HeightRequest="50"/>
+                    </Border>
+
+                    <Border Stroke="Black"
+                                StrokeThickness="2"
+                                StrokeShape="Rectangle">
+                        <Label Text="Image2"
+                                   BackgroundColor="DeepSkyBlue"
+                                   WidthRequest="50"
+                                   HeightRequest="50"/>
+                    </Border>
+
+                    <Border Stroke="Black"
+                                StrokeThickness="2"
+                                StrokeShape="Rectangle">
+                        <Label Text="Image3"
+                                   BackgroundColor="LightGreen"
+                                   WidthRequest="50"
+                                   HeightRequest="50"/>
+                    </Border>
+
+                </FlexLayout>
+
+                <FlexLayout Direction="Column"
+                            FlexLayout.Basis="50%"
+                            Padding="10">
+
+                    <Border Stroke="Black"
+                            StrokeThickness="2"
+                            StrokeShape="Rectangle"
+                            FlexLayout.Basis="26.3%">
+                        <Label Text="This is my first TextBlock. It contains the same basic text as the others"
+                               LineBreakMode="WordWrap"/>
+                    </Border>
+
+                    <Border Stroke="Black"
+                            StrokeThickness="2"
+                            StrokeShape="Rectangle"
+                            FlexLayout.Basis="21%">
+                        <Label Text="This is my second TextBlock. It contains the same basic text as the others"
+                               LineBreakMode="WordWrap"/>
+                    </Border>
+
+                    <Border Stroke="Black"
+                            StrokeThickness="2"
+                            StrokeShape="Rectangle"
+                            FlexLayout.Basis="18.4%">
+                        <Label Text="This is my third TextBlock. It contains the same basic text as the others"
+                               LineBreakMode="WordWrap"/>
+                    </Border>
+
+                    <Border Stroke="Black"
+                            StrokeThickness="2"
+                            StrokeShape="Rectangle"
+                            FlexLayout.Basis="21%">
+                        <Label Text="This is my fourth TextBlock. It contains the same basic text as the others"
+                               LineBreakMode="WordWrap"/>
+                    </Border>
+
+                </FlexLayout>
+
+            </FlexLayout>
+        </Border>
+
+        <Border Stroke="Black"
+                    StrokeThickness="2"
+                    StrokeShape="Rectangle"
+                    AbsoluteLayout.LayoutBounds="0,0.98,1,0.04"
+                    AbsoluteLayout.LayoutFlags="All">
+            <BoxView/>
+        </Border>
+
+    </AbsoluteLayout>
+
+</ContentPage>

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="UI_Ejercicio2_U8_DI.MainPage">
+    <FlexLayout Direction="Column">
+
+        <Label Text="HEADER"
+               TextColor="Blue"
+               FontSize="18"
+               BackgroundColor="Cyan"
+               HorizontalTextAlignment="Center"/>
+
+        <FlexLayout FlexLayout.Grow="1">
+
+            <Label 
+                   BackgroundColor="Blue"
+                   FlexLayout.Basis="50"/>
+
+            <Label Text="CONTENT"
+                   TextColor="Blue"
+                   FontSize="18"
+                   BackgroundColor="Gray"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"
+                   FlexLayout.Grow="1"/>
+
+            <Label 
+                   BackgroundColor="Green"
+                   FlexLayout.Basis="50"/>
+
+        </FlexLayout>
+
+        <Label Text="FOOTER"
+               TextColor="Blue"
+               FontSize="18"
+               BackgroundColor="Pink"
+               HorizontalTextAlignment="Center"/>
+
+    </FlexLayout>
+
+</ContentPage>
