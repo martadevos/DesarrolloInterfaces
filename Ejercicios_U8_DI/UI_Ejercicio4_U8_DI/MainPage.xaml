@@ -32,33 +32,34 @@
             <FlexLayout Direction="Row">
 
                 <FlexLayout Direction="Row"
-                                FlexLayout.Basis="50%"
-                                Padding="10">
+                            Wrap="Wrap"
+                            FlexLayout.Basis="50%"
+                            Padding="10">
                     <Border Stroke="Black"
-                                StrokeThickness="2"
-                                StrokeShape="Rectangle">
+                            StrokeThickness="2"
+                            StrokeShape="Rectangle"
+                            WidthRequest="150"
+                            HeightRequest="150">
                         <Label Text="Image1"
-                                   BackgroundColor="Orange"
-                                   WidthRequest="50"
-                                   HeightRequest="50"/>
+                               BackgroundColor="Orange"/>
                     </Border>
 
                     <Border Stroke="Black"
-                                StrokeThickness="2"
-                                StrokeShape="Rectangle">
+                            StrokeThickness="2"
+                            StrokeShape="Rectangle"
+                            WidthRequest="150"
+                            HeightRequest="150">
                         <Label Text="Image2"
-                                   BackgroundColor="DeepSkyBlue"
-                                   WidthRequest="50"
-                                   HeightRequest="50"/>
+                               BackgroundColor="DeepSkyBlue"/>
                     </Border>
 
                     <Border Stroke="Black"
-                                StrokeThickness="2"
-                                StrokeShape="Rectangle">
+                            StrokeThickness="2"
+                            StrokeShape="Rectangle"
+                            WidthRequest="150"
+                            HeightRequest="150">
                         <Label Text="Image3"
-                                   BackgroundColor="LightGreen"
-                                   WidthRequest="50"
-                                   HeightRequest="50"/>
+                               BackgroundColor="LightGreen"/>
                     </Border>
 
                 </FlexLayout>
