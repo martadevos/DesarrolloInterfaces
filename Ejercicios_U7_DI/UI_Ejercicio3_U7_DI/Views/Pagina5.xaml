@@ -1,17 +1,16 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="UI_Ejercicio2_U7_DI.MainPage">
-
+             x:Class="UI_Ejercicio3_U7_DI.Views.Pagina5"
+             Title="Pagina5">
     <VerticalStackLayout
             Spacing="25"
             Padding="30,0"
             VerticalOptions="Center">
-        <Entry Placeholder="Nombre"/>
 
-        <Button Text="Ir a PaginaTabbed"
-                Clicked="Button_Clicked"/>
-
+        <Label Text="{Binding Nombre}"/>
+        
+        <Label Text="{Binding Apellidos}"/>
+        
     </VerticalStackLayout>
-
 </ContentPage>
