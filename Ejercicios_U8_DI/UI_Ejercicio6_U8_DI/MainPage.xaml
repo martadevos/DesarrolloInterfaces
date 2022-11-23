@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="UI_Ejercicio6_U8_DI.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <HorizontalStackLayout>
+                <!--ACABAR BOTONES (FALTAN LAS IMAGENES)-->
+                <ImageButton x:Name="imgbtnAñadirPersona"
+                             Clicked="imgbtnAñadirPersona_Clicked"/>
+                <ImageButton x:Name="imgbtnBorrarPersona"
+                             Clicked="imgbtnBorrarPersona_Clicked"/>
+                <ImageButton x:Name="imgbtGuardarPersona"
+                             Clicked="imgbtGuardarPersona_Clicked"/>
+            </HorizontalStackLayout>
+            
+            <Entry x:Name="txtNombre"
+                   Placeholder="Nombre"/>
+
+            <Label x:Name="lblNombreVacio"
+                   IsVisible="false"/>
+
+            <Entry x:Name="txtApellido"
+                   Placeholder="Apellido"/>
+
+            <Label x:Name="lblApellidoVacio"
+                   IsVisible="false"/>
+
+            <DatePicker x:Name="dtpckFechaNac"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

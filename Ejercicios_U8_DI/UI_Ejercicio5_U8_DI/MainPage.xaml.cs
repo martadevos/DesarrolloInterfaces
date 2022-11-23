@@ -1,24 +1,18 @@
-﻿namespace UI_Ejercicio5_U8_DI
+﻿using DAL_Ejercicio5_U8_DI;
+using Entidades_Ejercicio5_U8_DI;
+using System.Collections.ObjectModel;
+
+namespace UI_Ejercicio5_U8_DI
 {
     public partial class MainPage : ContentPage
     {
-        int count = 0;
-
         public MainPage()
         {
             InitializeComponent();
-        }
 
-        private void OnCounterClicked(object sender, EventArgs e)
-        {
-            count++;
+            List<clsPersona> listadoPersonas = clsListadoPersonasDAL.getListadoCompletoPersonas();
 
-            if (count == 1)
-                CounterBtn.Text = $"Clicked {count} time";
-            else
-                CounterBtn.Text = $"Clicked {count} times";
-
-            SemanticScreenReader.Announce(CounterBtn.Text);
+            lvPersonas.ItemsSource = listadoPersonas;
         }
     }
 }

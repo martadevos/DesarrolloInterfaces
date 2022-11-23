@@ -15,7 +15,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL_Ejercicio5_U8_DI", "DAL
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entidades_Ejercicio5_U8_DI", "Entidades_Ejercicio5_U8_DI\Entidades_Ejercicio5_U8_DI.csproj", "{944B3857-F50E-4121-BCC8-9BBCEB24E1B1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UI_Ejercicio5_U8_DI", "UI_Ejercicio5_U8_DI\UI_Ejercicio5_U8_DI.csproj", "{69006F5B-B467-4C84-A704-51655CC14CA4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UI_Ejercicio5_U8_DI", "UI_Ejercicio5_U8_DI\UI_Ejercicio5_U8_DI.csproj", "{69006F5B-B467-4C84-A704-51655CC14CA4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UI_Ejercicio6_U8_DI", "UI_Ejercicio6_U8_DI\UI_Ejercicio6_U8_DI.csproj", "{40EE0CB4-E82C-40B4-9211-476505BA9809}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -61,6 +63,12 @@ Global
 		{69006F5B-B467-4C84-A704-51655CC14CA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{69006F5B-B467-4C84-A704-51655CC14CA4}.Release|Any CPU.Build.0 = Release|Any CPU
 		{69006F5B-B467-4C84-A704-51655CC14CA4}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{40EE0CB4-E82C-40B4-9211-476505BA9809}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40EE0CB4-E82C-40B4-9211-476505BA9809}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40EE0CB4-E82C-40B4-9211-476505BA9809}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{40EE0CB4-E82C-40B4-9211-476505BA9809}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40EE0CB4-E82C-40B4-9211-476505BA9809}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40EE0CB4-E82C-40B4-9211-476505BA9809}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
