@@ -10,18 +10,10 @@
 
         private async void imgbtGuardarPersona_Clicked(object sender, EventArgs e)
         {
-            bool camposRellenos = txtNombre.Text != "" && txtApellido.Text != "";
-            if (!camposRellenos)
-            {
-                lblNombreVacio.IsVisible = true;
-                lblApellidoVacio.IsVisible = true;
-            }
-            else
-            {
-                lblNombreVacio.IsVisible = false;
-                lblApellidoVacio.IsVisible = false;
-                await DisplayAlert("Guardado correctamente", txtNombre.Text + " " + txtApellido.Text + " se ha guardado correctamente", "OK");
-            }
+            lblNombreVacio.IsVisible = txtNombre.Text == "";
+            lblApellidoVacio.IsVisible = txtApellido.Text == "";
+            lblRealizadoCorrectamente.Text = "Se ha guardado correctamente";
+            lblRealizadoCorrectamente.IsVisible = !lblNombreVacio.IsVisible && !lblApellidoVacio.IsVisible;
         }
 
         private async void imgbtnBorrarPersona_Clicked(object sender, EventArgs e)
@@ -33,7 +25,8 @@
                 txtNombre.Text = "";
                 txtApellido.Text = "";
                 dtpckFechaNac.Date = DateTime.Today;
-                await DisplayAlert("Borrado correctamente", "La persona se ha borrado correctamente", "OK");
+                lblRealizadoCorrectamente.Text = "Se ha borrado correctamente";
+                lblRealizadoCorrectamente.IsVisible = true;
             }
         }
 

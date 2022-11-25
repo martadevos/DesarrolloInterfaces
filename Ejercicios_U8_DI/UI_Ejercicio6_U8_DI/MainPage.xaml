@@ -3,37 +3,58 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="UI_Ejercicio6_U8_DI.MainPage">
 
-    <ScrollView>
-        <VerticalStackLayout
+    <VerticalStackLayout
             Spacing="25"
             Padding="30,0"
-            VerticalOptions="Center">
+            VerticalOptions="Center"
+            HorizontalOptions="Center">
 
-            <HorizontalStackLayout>
-                <!--ACABAR BOTONES (FALTAN LAS IMAGENES)-->
-                <ImageButton x:Name="imgbtnAñadirPersona"
-                             Clicked="imgbtnAñadirPersona_Clicked"/>
-                <ImageButton x:Name="imgbtnBorrarPersona"
-                             Clicked="imgbtnBorrarPersona_Clicked"/>
-                <ImageButton x:Name="imgbtGuardarPersona"
-                             Clicked="imgbtGuardarPersona_Clicked"/>
-            </HorizontalStackLayout>
-            
-            <Entry x:Name="txtNombre"
-                   Placeholder="Nombre"/>
+        <HorizontalStackLayout>
+            <ImageButton x:Name="imgbtnAñadirPersona"
+                         HeightRequest="35"
+                         WidthRequest="35"
+                         Source="plus.png"
+                         Clicked="imgbtnAñadirPersona_Clicked"
+                         Margin="5"/>
+            <ImageButton x:Name="imgbtnBorrarPersona"
+                         HeightRequest="35"
+                         WidthRequest="35"
+                         Source="trash.png"
+                         Clicked="imgbtnBorrarPersona_Clicked"
+                         Margin="5"/>
+            <ImageButton x:Name="imgbtGuardarPersona"
+                         HeightRequest="35"
+                         WidthRequest="35"
+                         Source="pencil.png"
+                         Clicked="imgbtGuardarPersona_Clicked"
+                         Margin="5"/>
+        </HorizontalStackLayout>
 
-            <Label x:Name="lblNombreVacio"
-                   IsVisible="false"/>
+        <Entry x:Name="txtNombre"
+               Text=""
+               Placeholder="Nombre"/>
 
-            <Entry x:Name="txtApellido"
-                   Placeholder="Apellido"/>
+        <Label x:Name="lblNombreVacio"
+               Text="Error: El nombre está vacío"
+               TextColor="Red"
+               IsVisible="false"/>
 
-            <Label x:Name="lblApellidoVacio"
-                   IsVisible="false"/>
+        <Entry x:Name="txtApellido"
+               Text=""
+               Placeholder="Apellido"/>
 
-            <DatePicker x:Name="dtpckFechaNac"/>
+        <Label x:Name="lblApellidoVacio"
+               Text="Error: El apellido está vacío"
+               TextColor="Red"
+               IsVisible="false"/>
 
-        </VerticalStackLayout>
-    </ScrollView>
+        <DatePicker x:Name="dtpckFechaNac"/>
+
+        <Label x:Name="lblRealizadoCorrectamente"
+               Text=""
+               TextColor="LawnGreen"
+               IsVisible="false"/>
+
+    </VerticalStackLayout>
 
 </ContentPage>
