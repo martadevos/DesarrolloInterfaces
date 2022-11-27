@@ -6,5 +6,12 @@ public partial class MainPage : ContentPage
 	{
 		InitializeComponent();
 	}
+
+	private void Entry_TextChanged(object sender, TextChangedEventArgs e)
+	{
+		if (!int.TryParse(e.NewTextValue, out int n)){
+			entryFontSize.Text = e.OldTextValue;
+		}
+	}
 }
 

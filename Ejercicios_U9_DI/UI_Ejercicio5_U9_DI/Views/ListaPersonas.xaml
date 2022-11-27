@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:UI_Ejercicio5_U9_DI.ViewModels"
+             x:Class="UI_Ejercicio5_U9_DI.Views.ListaPersonas"
+             Title="ListaPersonas">
+    <ContentPage.BindingContext>
+        <viewModels:clsListaPersonasVM/>
+    </ContentPage.BindingContext>
+    <ListView x:Name="lvPersonas">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <Grid RowSpacing="10" ColumnSpacing="10">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Text="{Binding Nombre}"
+                               Margin="10,0,0,0"
+                               VerticalOptions="Center"/>
+                        <Label Text="{Binding Apellidos}"
+                               Grid.Column="1"
+                               VerticalOptions="Center"/>
+                        <Image Source="{Binding FotoURL}"/>
+                    </Grid>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</ContentPage>
