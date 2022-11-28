@@ -13,10 +13,21 @@ namespace UI_Ejercicio5_U9_DI.ViewModels
     {
         #region Atributos
         private ObservableCollection<clsPersona> personas;
+        private clsPersona personaSeleccionada;
         #endregion
 
         #region Propiedades
         public ObservableCollection<clsPersona> Personas { get { return personas; } }
+        public clsPersona PersonaSeleccionada { 
+            get 
+            { 
+                return personaSeleccionada; 
+            } 
+            set 
+            { 
+                personaSeleccionada = value;
+            } 
+        }
         #endregion
 
         #region Constructores

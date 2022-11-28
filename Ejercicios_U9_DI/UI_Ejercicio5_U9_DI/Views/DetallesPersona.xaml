@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:UI_Ejercicio5_U9_DI.ViewModels"
+             x:Class="UI_Ejercicio5_U9_DI.Views.DetallesPersona"
+             Title="DetallesPersona">
+    <VerticalStackLayout HorizontalOptions="Center">
+        
+        <HorizontalStackLayout>
+
+            <Label Text="{Binding Persona.Nombre}"
+                   VerticalOptions="Center"
+                   Margin="0,0,10,0"/>
+
+            <Label Text="{Binding Persona.Apellidos}"
+                   VerticalOptions="Center"
+                   Margin="0,0,10,0"/>
+
+            <Image Source="{Binding Persona.FotoURL}"
+               MaximumHeightRequest="100" 
+               MaximumWidthRequest="100"/>
+
+        </HorizontalStackLayout>
+
+        <Label Text="{Binding Persona.FechaNac}"/>
+
+        <Label Text="{Binding Persona.Direccion}"/>
+
+        <Label Text="{Binding Persona.Telefono}"/>
+        
+    </VerticalStackLayout>
+</ContentPage>

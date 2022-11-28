@@ -28,6 +28,7 @@ namespace UI_Ejercicio3_U9_DI.ViewModels
         #region Constructores
         public clsPersonaVM() {}
         #endregion
+
         #region INotifyPropertyChanged
         public event PropertyChangedEventHandler PropertyChanged;
         private void onPropertyChanged(string property)

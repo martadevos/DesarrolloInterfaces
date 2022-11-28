@@ -49,6 +49,7 @@ namespace UI_Ejercicio4_U9_DI.ViewModels
         #region Constructores
         public clsMainPageVM() { }
         #endregion
+
         #region INotifyPropertyChanged
         public event PropertyChangedEventHandler PropertyChanged;
         private void onPropertyChanged(string property)

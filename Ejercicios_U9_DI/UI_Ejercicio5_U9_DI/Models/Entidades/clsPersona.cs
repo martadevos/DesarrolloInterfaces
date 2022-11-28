@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace UI_Ejercicio5_U9_DI.Models.Entidades
 {
-    internal class clsPersona
+    public class clsPersona
     {
         #region Atributos
         private string nombre;
