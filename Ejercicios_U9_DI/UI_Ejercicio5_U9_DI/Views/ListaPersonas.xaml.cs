@@ -1,4 +1,3 @@
-using UI_Ejercicio5_U9_DI.Models.DAL;
 using UI_Ejercicio5_U9_DI.ViewModels;
 
 namespace UI_Ejercicio5_U9_DI.Views;
