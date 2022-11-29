@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:UI_Ejercicio1_U10_DI.ViewModels"
+             x:Class="UI_Ejercicio1_U10_DI.MainPage">
+
+    <ContentPage.BindingContext>
+        <viewModels:clsListadopersonasVM/>
+    </ContentPage.BindingContext>
+    <StackLayout
+            Spacing="25"
+            Padding="30,0"
+            Orientation="Vertical"
+            VerticalOptions="Center">
+        <HorizontalStackLayout HorizontalOptions="Center">
+            <Entry x:Name="txtBuscarPersona"  
+                   FontSize="20" FontAttributes="Bold" 
+                   MinimumWidthRequest="300" 
+                   BackgroundColor="WhiteSmoke"
+                   Text="{Binding EntryBuscarPersona}"/>
+            
+            <Button
+                x:Name="btnBuscar"
+                Text="buscar"
+                Command="{Binding BuscarCommand}"
+                HorizontalOptions="Center" />
+            
+        </HorizontalStackLayout>
+
+        <ListView x:Name="lvPersonas" 
+                  ItemsSource="{Binding ListadoPersonasMostrado}" 
+                  SelectedItem="{Binding PersonaSeleccionada}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        
+                        <Grid RowSpacing="10" ColumnSpacing="10">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="auto"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="auto"/>
+                                <ColumnDefinition Width="auto"/>
+                            </Grid.ColumnDefinitions>
+                            
+                            <Label Text="{Binding Nombre}"
+                               VerticalOptions="Center"/>
+                            <Label Text="{Binding Apellidos}"
+                               Grid.Column="1"
+                               VerticalOptions="Center"/>
+
+                        </Grid>
+                        
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <Button
+                x:Name="btnEliminar"
+                Text="Eliminar"
+                Command="{Binding EliminarCommand}"
+                HorizontalOptions="Center" />
+
+    </StackLayout>
+
+</ContentPage>
