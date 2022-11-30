@@ -11,8 +11,8 @@
     </ContentPage.BindingContext>
 
     <ContentPage.MenuBarItems>
-        <MenuBarItem Text="Persona" BindingContext="{Binding Path=BindingContext, Source={x:Reference paginaInicio}}">
-            <MenuFlyoutItem Text="Eliminar"
+        <MenuBarItem Text="Persona">
+            <MenuFlyoutItem Text="Eliminar" BindingContext="{Binding Path=BindingContext, Source={x:Reference paginaInicio}}"
                             Command="{Binding EliminarCommand}" />
         </MenuBarItem>
     </ContentPage.MenuBarItems>

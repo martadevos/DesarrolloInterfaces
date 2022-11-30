@@ -44,7 +44,6 @@ namespace UI_Ejercicio2_U10_DI.ViewModels
         {
             get
             {
-                buscarCommand = new DelegateCommand(BuscarCommand_Execute, BuscarCommand_CanExecute);
                 return buscarCommand;
             }
         }
@@ -68,7 +67,6 @@ namespace UI_Ejercicio2_U10_DI.ViewModels
         { 
             get 
             {
-                eliminarCommand = new DelegateCommand(EliminarCommand_Execute, EliminarCommand_CanExecute);
                 return eliminarCommand; 
             } 
         }
@@ -79,6 +77,9 @@ namespace UI_Ejercicio2_U10_DI.ViewModels
 
         public clsListadopersonasVM()
         {
+            buscarCommand = new DelegateCommand(BuscarCommand_Execute, BuscarCommand_CanExecute);
+            eliminarCommand = new DelegateCommand(EliminarCommand_Execute, EliminarCommand_CanExecute);
+
             listadoPersonasCompleto = new ObservableCollection<clsPersona>(DAL_Ejercicios1y2_U10_DI.clsListadoPersonas.listadoCompletoPersonas());
             listadoPersonasMostrado = new ObservableCollection<clsPersona>(listadoPersonasCompleto);
         }

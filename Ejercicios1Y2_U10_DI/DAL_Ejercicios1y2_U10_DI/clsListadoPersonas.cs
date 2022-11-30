@@ -14,9 +14,8 @@ namespace DAL_Ejercicios1y2_U10_DI
         {
             ObservableCollection<clsPersona> listaPersonas = new ObservableCollection<clsPersona>();
             listaPersonas.Add(new clsPersona("Marta", "Devós", "09/12/2003"));
-            listaPersonas.Add(new clsPersona("Juan José", "Muñoz", "06/07/2000"));
             listaPersonas.Add(new clsPersona("Rafael David", "Devós", "06/01/1974"));
-            listaPersonas.Add(new clsPersona("Marta", "Devós", "21/10/1972"));
+            listaPersonas.Add(new clsPersona("Agustin", "Devós", "21/10/1972"));
             listaPersonas.Add(new clsPersona("Marta", "Garcia", "09/12/2003"));
             listaPersonas.Add(new clsPersona("Berta", "Devós", "06/01/2005"));
             listaPersonas.Add(new clsPersona("Fernando", "Devós", "07/05/2099"));
